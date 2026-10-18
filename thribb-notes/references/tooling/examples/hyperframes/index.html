@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Area preserved by a shear</title>
+<script src="assets/gsap.min.js"></script>
+<style>html,body{margin:0;background:#131b24}#root{width:100%;height:100%;position:relative;overflow:hidden}.clip{position:absolute;inset:0}svg{width:100%;height:100%}</style>
+</head><body><div id="root" data-composition-id="area-proof" data-width="640" data-height="360" data-duration="4" data-fps="15">
+<svg id="shear-diagram" class="clip" data-start="0" data-duration="4" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg">
+<path d="M80 270 H560 M180 90 V290" stroke="#8899aa" stroke-width="2" fill="none"/>
+<polygon id="area" points="180,270 380,270 380,110 180,110" fill="#58c4dd" fill-opacity=".35" stroke="#58c4dd" stroke-width="3"/>
+<path d="M180 190 H380" stroke="#ffffff" stroke-width="2"/>
+<path id="mid" d="M180 190 H380" stroke="#ffff88" stroke-width="3"/>
+</svg></div><script>
+const tl=gsap.timeline({paused:true});
+tl.to('#area',{attr:{points:'180,270 380,270 480,110 280,110'},duration:2,ease:'none'},1);
+tl.to('#mid',{x:50,duration:2,ease:'none'},1);
+window.__timelines['area-proof']=tl;
+</script></body></html>
