@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-17",
+  "purpose": "renderer/tooling foundations, not corpus-derived teaching validation",
+  "checks": [
+    {
+      "tool": "ManimGX",
+      "version": "0.1.1",
+      "test": "gx_square.py / EqualAreas",
+      "installed": true,
+      "executed": true,
+      "rendered": true,
+      "pixels_inspected": "storyboard; centered square and equation",
+      "requested": "3s,640x360,15fps",
+      "actual": "31 frames;3.066667s;avg465/46",
+      "limits": "sampled2D layout clean; non-CFR static-hold behavior; no narration"
+    },
+    {
+      "tool": "ManimGX",
+      "version": "0.1.1",
+      "test": "gx_shear.py / ShearPreservesArea",
+      "executed": true,
+      "rendered": true,
+      "pixels_inspected": "decoded contact sheet, last decoded frame and end-state inspect storyboard",
+      "requested": "8s,960x540,24fps",
+      "actual": "145 frames;8.041667s;avg3480/193",
+      "limits": "5sample automatic layout check clean;7 explicit inspect samples clean; no real-time viewing/audio test; tail seek caveat"
+    },
+    {
+      "tool": "FFmpeg normalization",
+      "test": "gx-shear-cfr.mp4",
+      "executed": true,
+      "rendered": true,
+      "actual": "8.000s;192frames;24/1fps;960x540;silent",
+      "pixels_inspected": "last frame at7.5s",
+      "limits": "explicit silent test derivative, not general audio-preserving repair"
+    },
+    {
+      "tool": "HyperFrames",
+      "version": "0.8.168",
+      "test": "area-proof index.html",
+      "executed": true,
+      "rendered": true,
+      "actual": "640x360,4.000s,60frames,15/1fps",
+      "automatic": "strict check passed,browserSkipped=false,5samples,0findings",
+      "pixels_inspected": "decoded4-state contact sheet",
+      "limits": "no text checks:checked0;no motion-sidecar assertions;silent;software screenshot path,not GPU benchmark"
+    },
+    {
+      "tool": "Anatomy",
+      "test": "upstream dial-indicator example,not original authored proof",
+      "executed": true,
+      "rendered": "dark and lightHTML built;390pxcaptures",
+      "pixels_inspected": "both phone captures",
+      "limits": "no overflow,console clean;fine geometry too faint to claim teaching-ready contrast;no audit/shader/3D/interaction coverage"
+    },
+    {
+      "tool": "Manim CE",
+      "version": "0.22.0",
+      "installed": false,
+      "executed": false,
+      "rendered": false,
+      "blocker": "install failed:missing pangocairo development dependency"
+    },
+    {
+      "tool": "ManimGL",
+      "installed": false,
+      "executed": false,
+      "rendered": false,
+      "limits": "source and runtime requirements inspected only"
+    },
+    {
+      "tool": "fframes",
+      "installed": false,
+      "executed": false,
+      "rendered": false,
+      "blocker": "Rust/Cargo absent;linked native codec/development dependencies not established"
+    },
+    {
+      "tool": "numeric model",
+      "test": "check_shear_model.py",
+      "executed": true,
+      "result": "PASS:area6,width3,5shears x5sliceheights",
+      "limits": "model invariant tests,not perceptual/learning tests"
+    }
+  ],
+  "publication": "not performed"
+}
