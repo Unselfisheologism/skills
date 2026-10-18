@@ -1,0 +1,14 @@
+{
+  "name": "visual-shear-smoke",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "prepare-assets": "node prepare-assets.mjs",
+    "check": "hyperframes check . --strict --json",
+    "render": "hyperframes render . --workers 1 --low-memory-mode --fps 15 --quality draft --output hf-odd.mp4"
+  },
+  "dependencies": {
+    "hyperframes": "0.8.168",
+    "gsap": "3.14.2"
+  }
+}

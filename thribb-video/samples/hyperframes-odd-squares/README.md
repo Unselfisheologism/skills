@@ -1,0 +1,4 @@
+Original silent HyperFrames sample v2: opens with the question "What is 1+3+5+7?" (no answer in the title), grows 1, 3, 5, 7 blocks as colored borders, labels each border as n + (n-1), totals 16 = 4 x 4, then states the general border 2n-1 and "n borders make an n x n square" and holds about 5 s.
+Run: npm install --ignore-scripts; npm run prepare-assets; HYPERFRAMES_NO_TELEMETRY=1 DO_NOT_TRACK=1 npm run check; npm run render (hyperframes 0.8.168, system Chrome, no hosted/cloud steps).
+Results (run by the agent that wrote this sample; the engine itself was independently validated earlier by the tooling specialist): strict check browserSkipped false, layout 0 findings, contrast 25/25 text checks passed. Output 960x540, 15 fps, 300 frames, 20.0 s. Decoded frames viewed (hf_odd_v2.png, hf_odd_end.png).
+Limits: silent, so no narration sync test; renderer and layout test, not pedagogical acceptance; general n is argued from the 4x4 case, not shown on a larger n.
