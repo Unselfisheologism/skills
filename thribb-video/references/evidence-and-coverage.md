@@ -25,3 +25,7 @@ Per-item rows: coverage-ledger.csv. Tag meanings: source-key.md. Verification of
 - samples/staircase-narration-timing.md: narration table, untested with any voice. The staircase videos are silent (no speech); they carry on-screen text only.
 
 Quote policy: paraphrased techniques only; no captions, screenshots or lesson text reproduced.
+
+## Added 2026-10-18: staged workflow and related skills (not from the 3Blue1Brown corpus)
+
+references/staged-production.md, references/motion-timing-starters.md and references/tooling/related-skills.md (and references/tool-playbook.md, which draws on the tools' own repos and docs) come from a different source than the channel and lesson-site study: two public X posts by @francescoinweb3 (https://x.com/francescoinweb3/status/2111393917899808880 and https://x.com/francescoinweb3/status/2108882188624121896) and the article linked from the second. The posts and article were read in full through api.fxtwitter.com. The listed repos had license and description checked through the GitHub API, and a few READMEs read; none was installed, run or used to render anything here. The staged method itself has not been tested by a build. The corpus coverage figures above are unchanged by this addition: they describe the 3Blue1Brown study only.
