@@ -1,0 +1,4 @@
+Silent ManimGX sample, 46.04 s, 24 fps, 1105 frames, 960x540. Two staircases make a rectangle: 4 x 5 = 20, 20/2 = 10, then general n with the row argument shown on the picture (a row is outlined; row k: k + (n+1-k) = n+1; row 2: 2 + 3 = 5), then 2(1+...+n) = n(n+1) and the final formula held about 4 s.
+Normalization: GX raw output is variable frame rate (last frame stamp earlier than container length, the final hold is only in the container duration). Use ffmpeg -vf "fps=24,tpad=stop_mode=clone:stop_duration=6" -t <container duration> to keep the held tail. Verified frame count equals duration x 24.
+Checks: manimgx inspect, 29 layout samples, no problems; decoded frames from 29 s to 45.9 s viewed (staircase_end_frames.png).
+Limits: silent (no speech), so no articulation or narration-sync validation; renderer and sequence test, not pedagogical acceptance. The earlier 18 s / 4-frame version is superseded.
