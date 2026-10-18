@@ -25,6 +25,8 @@ See references/evidence-and-coverage.md.
 6. Put caveats in the open: what you simplified, where the full version is.
 7. Review with references/review-rubric.md. View every figure as an image at reading width. Do not report ready from file existence.
 
+For larger pages, run the same steps as six small jobs that each leave one file (spec.md, facts.json, outline.md, figures, a page-edits file, review.md) so a wrong result is fixed at the file that caused it. See references/staged-notes.md. Before you author, read references/tool-playbook.md: it says what Anatomy, ManimGX, Manim CE and HyperFrames each do on a page and which of their own docs to read first. That method comes from a public practitioner post about video, adapted here for the page, and has not been tested by a build here. Related third-party skills and their licenses: references/tooling/related-skills.md (read-only review, none installed or run).
+
 ## Page rules
 - Light reading column, dark figure canvases. Figures full column width, captioned in one line.
 - Equations: color-match terms to the figure parts they name. Box or arrow only the entries that change between steps.
