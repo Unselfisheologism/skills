@@ -31,6 +31,8 @@ Source anchors: the four criteria and the warning about over-philosophizing intr
 6. Choose engines (references/engines-and-tooling.md) by the reasoning operation, build at low quality first, check every frame at reading size, then render.
 7. Run the review checklist (references/review-rubric.md). Fix, re-render, re-check pixels. Do not report ready from file existence.
 
+For larger builds, run the same steps as six small jobs that each leave one file (spec.md, facts.json, story.md, scene code, timing file, review.md) so a wrong result is fixed at the file that caused it. See references/staged-production.md. Before you author, read references/tool-playbook.md: it says what Manim CE, ManimGX, Anatomy and HyperFrames each do in a build and which of their own docs to read first, including HyperFrames' concepts, storyboard, iterating and recreating-references docs. That method comes from a public practitioner post, not from the 3Blue1Brown study, and has not been tested by a build here. Timing defaults for titles and labels: references/motion-timing-starters.md. Related third-party skills and their licenses: references/tooling/related-skills.md (read-only review, none installed or run).
+
 ## Articulation in brief (full detail in references/articulation-playbook.md)
 
 - Open with a thing, not a thesis. Then say plainly what you will do, in one sentence, and give a rough map.
